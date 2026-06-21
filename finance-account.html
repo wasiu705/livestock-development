@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ministry of Livestock Development - Edo State</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="fixed w-full top-0 z-50 bg-white shadow-md">
+    <div class="bg-[var(--edo-green)] text-white text-sm py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <span><i class="fas fa-phone-alt mr-2"></i>+234 801 234 5678</span>
+                    <span class="hidden md:inline"><i class="fas fa-envelope mr-2"></i>mld@edostate.gov.ng</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="https://web.facebook.com/profile.php?id=61586786852959" class="hover:text-[var(--edo-gold)] transition"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/yourhandle" class="hover:text-[var(--edo-gold)] transition"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/yourhandle" class="hover:text-[var(--edo-gold)] transition"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center gap-3">
+                    <img src="./image/edo-images.jpg" alt="Edo State Logo" class="h-12 w-12 rounded-full object-cover">
+                    <div>
+                        <h1 class="text-lg md:text-xl font-bold text-[var(--edo-green)] leading-tight">Ministry of Livestock<br>Development</h1>
+                        <p class="text-xs text-[var(--text-light)]">Edo State Government</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Nav (lg+) -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="index.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition">Home</a>
+                    <a href="about.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition">About</a>
+                    <a href="service.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition">Services</a>
+                    <a href="project.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition">Projects</a>
+                    <a href="news.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition">News</a>
+                    
+                    <!-- Desktop Dropdown (Hover) -->
+                    <div class="relative group">
+                        <a href="#" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition cursor-pointer flex items-center gap-1">
+                            Department <i class="fas fa-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
+                        </a>
+                        <div class="absolute top-full left-0 mt-2 w-72 bg-white rounded-lg shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="admin.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">HR / Administrative</a>
+                            <a href="finance-account.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">Finance & Account</a>
+                            <a href="veterinary-service.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">Veterinary Service</a>
+                            <a href="livestock-extension-services.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">Livestock Extension Services</a>
+                            <a href="fisheries.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">Fisheries Department</a>
+                            <a href="animal-husbandry-services.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">Animal Husbandry Services</a>
+                            <a href="veterinary-public-health-services.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">Veterinary Public Health Services</a>
+                            <a href="policy-planning-research-statistics.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">Policy Planning Research & Statistics</a>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="btn-primary">Contact Us</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-[var(--edo-green)] text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu (Slide-in) -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 lg:hidden transform translate-x-full transition-transform duration-300 overflow-y-auto pb-16">        <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+                <h3 class="text-xl font-bold text-[var(--edo-green)]">Menu</h3>
+                <button id="close-menu" class="text-2xl text-[var(--text-dark)]">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="flex flex-col gap-4">
+                <a href="index.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-lg mobile-link">Home</a>
+                <a href="about.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-lg mobile-link">About</a>
+                <a href="service.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-lg mobile-link">Services</a>
+                <a href="project.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-lg mobile-link">Projects</a>
+                <a href="news.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-lg mobile-link">News</a>
+                
+                <!-- Mobile Department Dropdown (Tap to Expand) -->
+                <div>
+                    <button id="mobile-dept-toggle" class="w-full flex justify-between items-center text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-lg py-1">
+                        Department
+                        <i class="fas fa-chevron-down text-sm transition-transform duration-300" id="mobile-dept-icon"></i>
+                    </button>
+                    <div id="mobile-dept-menu" class="hidden pl-4 mt-2 space-y-3 border-l-2 border-gray-200">
+                        <a href="admin.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">HR / Administrative</a>
+                        <a href="finance-account.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">Finance & Account</a>
+                        <a href="veterinary-service.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">Veterinary Service</a>
+                        <a href="livestock-extension-services.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">Livestock Extension Services</a>
+                        <a href="fisheries.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">Fisheries Department</a>
+                        <a href="animal-husbandry-services.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">Animal Husbandry Services</a>
+                        <a href="veterinary-public-health-services.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">Veterinary Public Health Services</a>
+                        <a href="policy-planning-research-statistics.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">Policy Planning Research & Statistics</a>
+                    </div>
+                </div>
+                
+                <a href="contact.html" class="btn-primary text-center mobile-link mt-2">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Header -->
+<section class="pt-[140px] md:pt-[160px] bg-[var(--bg-light)] py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-[var(--text-dark)] mb-4 fade-in">Finance & Account Department</h1>
+        <p class="text-lg text-[var(--text-light)] max-w-3xl mx-auto fade-in">Ensuring transparent financial management, accurate budgeting, and strategic fiscal oversight for sustainable ministry operations.</p>
+    </div>
+</section>
+
+<!-- 🔹 GRID 1: Director Picture (Left) + Write-up (Right) -->
+<section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-10 items-center fade-in">
+            <!-- Left Grid: Picture -->
+            <div class="flex justify-center md:justify-start">
+                <div class="w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-xl border-4 border-[var(--edo-green)]/20">
+                    <img src="./image/finance-director-placeholder.jpg" alt="Director, Finance & Account" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/300/008751/FFFFFF?text=Director'">
+                </div>
+            </div>
+            
+            <!-- Right Grid: Small Write-up -->
+            <div>
+                <h2 class="text-3xl font-bold text-[var(--text-dark)] mb-2">Mr. Emokpae Samuel</h2>
+                <p class="text-[var(--edo-green)] font-semibold text-lg mb-4">Director, Finance & Accounts</p>
+                <p class="text-[var(--text-light)] leading-relaxed mb-6 text-justify">
+                    Oversees all financial operations, budget planning, and procurement processes for the Ministry. Ensures strict compliance with public financial regulations, maintains transparent accounting systems, and provides strategic fiscal advisory to guarantee optimal resource allocation and accountability across all ministry programs.
+                </p>
+                <a href="contact.html" class="btn-primary inline-flex items-center gap-2">
+                    <i class=></i> Contact Department
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 🔹 GRID 2: Department Mandate -->
+<section class="py-12 bg-[var(--bg-light)]">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+        <div class="bg-white p-8 rounded-xl shadow-md border-l-4 border-[var(--edo-green)]">
+            <h3 class="text-xl font-bold text-[var(--text-dark)] mb-3 flex items-center gap-2"><i class="fas fa-bullseye text-[var(--edo-green)]"></i> Department Mandate</h3>
+            <p class="text-[var(--text-light)] leading-relaxed text-justify">Responsible for setting up an accounting system, oversee and manage annual estimates, salaries and wages, and playing an advisory role to the organisation in all financial transactions, and managing the procurement function of the MDA.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 🔹 GRID 3: Roles & Responsibilities -->
+<section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 fade-in">
+            <h2 class="section-title center text-3xl md:text-4xl font-bold text-[var(--text-dark)]">Roles & Responsibilities</h2>
+            <p class="text-[var(--text-light)] max-w-2xl mx-auto mt-4">Core financial functions ensuring accountability, compliance, and efficient resource management.</p>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+ <footer class="bg-[var(--edo-green-dark)] text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center text-white/80 text-sm">
+        <p>&copy; 2026 Ministry of Livestock Development, Edo State Government. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Back to Top -->
+<div class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></div>
+
+<!-- Scripts -->
+<script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if(mobileMenuBtn) mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        mobileMenu.classList.add('translate-x-0');
+    });
+    if(closeMenuBtn) closeMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-0');
+        mobileMenu.classList.add('translate-x-full');
+    });
+
+    // Mobile Department Dropdown Toggle
+    const mobileDeptToggle = document.getElementById('mobile-dept-toggle');
+    const mobileDeptMenu = document.getElementById('mobile-dept-menu');
+    const mobileDeptIcon = document.getElementById('mobile-dept-icon');
+    if (mobileDeptToggle) {
+        mobileDeptToggle.addEventListener('click', () => {
+            mobileDeptMenu.classList.toggle('hidden');
+            mobileDeptIcon.classList.toggle('rotate-180');
+        });
+    }
+
+    // Project Filter Logic
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update active button style
+            filterButtons.forEach(b => {
+                b.classList.remove('bg-[var(--edo-green)]', 'text-white');
+                b.classList.add('bg-gray-100', 'text-[var(--text-dark)]');
+            });
+            btn.classList.remove('bg-gray-100', 'text-[var(--text-dark)]');
+            btn.classList.add('bg-[var(--edo-green)]', 'text-white');
+
+            // Filter projects
+            const filter = btn.getAttribute('data-filter');
+            projectCards.forEach(card => {
+                const status = card.getAttribute('data-status');
+                if (filter === 'all' || status === filter) {
+                    card.style.display = 'block';
+                    setTimeout(() => card.style.opacity = '1', 50);
+                } else {
+                    card.style.opacity = '0';
+                    setTimeout(() => card.style.display = 'none', 200);
+                }
+            });
+        });
+    });
+
+ // Back to Top Button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+    if(backToTop) backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Fade-in on Scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+</script>
+
+</body>
+</html>
+
+
+

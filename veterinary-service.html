@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ministry of Livestock Development - Edo State</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="fixed w-full top-0 z-50 bg-white shadow-md">
+    <div class="bg-[var(--edo-green)] text-white text-sm py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <span><i class="fas fa-phone-alt mr-2"></i>+234 801 234 5678</span>
+                    <span class="hidden md:inline"><i class="fas fa-envelope mr-2"></i>mld@edostate.gov.ng</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="https://web.facebook.com/profile.php?id=61586786852959" class="hover:text-[var(--edo-gold)] transition"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/yourhandle" class="hover:text-[var(--edo-gold)] transition"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/yourhandle" class="hover:text-[var(--edo-gold)] transition"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center gap-3">
+                    <img src="./image/edo-images.jpg" alt="Edo State Logo" class="h-12 w-12 rounded-full object-cover">
+                    <div>
+                        <h1 class="text-lg md:text-xl font-bold text-[var(--edo-green)] leading-tight">Ministry of Livestock<br>Development</h1>
+                        <p class="text-xs text-[var(--text-light)]">Edo State Government</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Nav (lg+) -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="index.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition">Home</a>
+                    <a href="about.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition">About</a>
+                    <a href="service.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition">Services</a>
+                    <a href="project.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition">Projects</a>
+                    <a href="news.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition">News</a>
+                    
+                    <!-- Desktop Dropdown (Hover) -->
+                    <div class="relative group">
+                        <a href="#" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition cursor-pointer flex items-center gap-1">
+                            Department <i class="fas fa-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
+                        </a>
+                        <div class="absolute top-full left-0 mt-2 w-72 bg-white rounded-lg shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+                            <a href="admin.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">HR / Administrative</a>
+                            <a href="finance-account.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">Finance & Account</a>
+                            <a href="veterinary-service.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">Veterinary Service</a>
+                            <a href="livestock-extension-services.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">Livestock Extension Services</a>
+                            <a href="fisheries.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">Fisheries Department</a>
+                            <a href="animal-husbandry-services.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">Animal Husbandry Services</a>
+                            <a href="veterinary-public-health-services.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">Veterinary Public Health Services</a>
+                            <a href="policy-planning-research-statistics.html" class="block px-4 py-2 text-sm text-[var(--text-dark)] hover:bg-gray-50 hover:text-[var(--edo-green)] transition">Policy Planning Research & Statistics</a>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="btn-primary">Contact Us</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-[var(--edo-green)] text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu (Slide-in) -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 lg:hidden transform translate-x-full transition-transform duration-300 overflow-y-auto pb-16">        <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+                <h3 class="text-xl font-bold text-[var(--edo-green)]">Menu</h3>
+                <button id="close-menu" class="text-2xl text-[var(--text-dark)]">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="flex flex-col gap-4">
+                <a href="index.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-lg mobile-link">Home</a>
+                <a href="about.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-lg mobile-link">About</a>
+                <a href="service.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-lg mobile-link">Services</a>
+                <a href="project.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-lg mobile-link">Projects</a>
+                <a href="news.html" class="text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-lg mobile-link">News</a>
+                
+                <!-- Mobile Department Dropdown (Tap to Expand) -->
+                <div>
+                    <button id="mobile-dept-toggle" class="w-full flex justify-between items-center text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-lg py-1">
+                        Department
+                        <i class="fas fa-chevron-down text-sm transition-transform duration-300" id="mobile-dept-icon"></i>
+                    </button>
+                    <div id="mobile-dept-menu" class="hidden pl-4 mt-2 space-y-3 border-l-2 border-gray-200">
+                        <a href="admin.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">HR / Administrative</a>
+                        <a href="finance-account.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">Finance & Account</a>
+                        <a href="veterinary-service.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">Veterinary Service</a>
+                        <a href="livestock-extension-services.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">Livestock Extension Services</a>
+                        <a href="fisheries.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">Fisheries Department</a>
+                        <a href="animal-husbandry-services.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">Animal Husbandry Services</a>
+                        <a href="veterinary-public-health-services.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">Veterinary Public Health Services</a>
+                        <a href="policy-planning-research-statistics.html" class="block text-[var(--text-dark)] hover:text-[var(--edo-green)] font-medium transition text-base mobile-link">Policy Planning Research & Statistics</a>
+                    </div>
+                </div>
+                
+                <a href="contact.html" class="btn-primary text-center mobile-link mt-2">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Header -->
+<section class="pt-[140px] md:pt-[160px] bg-[var(--bg-light)] py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-[var(--text-dark)] mb-4 fade-in">Veterinary Services Department</h1>
+        <p class="text-lg text-[var(--text-light)] max-w-3xl mx-auto fade-in">Delivering science-based animal healthcare, disease control, and welfare standards across all livestock and companion species in Edo State.</p>
+    </div>
+</section>
+
+<!-- 🔹 GRID 1: Director Picture + Write-up -->
+<section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-10 items-center fade-in">
+            <div class="flex justify-center md:justify-start">
+                <div class="w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-xl border-4 border-[var(--edo-green)]/20">
+                    <img src="./image/Dr_Aruna.jpeg" alt="Mr. Haruna" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/300/008751/FFFFFF?text=Mr.+Haruna'">
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-[var(--text-dark)] mb-2">Dr. Haruna</h2>
+                <p class="text-[var(--edo-green)] font-semibold text-lg mb-4">Director, Veterinary Services</p>
+                <p class="text-[var(--text-light)] leading-relaxed mb-6 text-justify">
+                    Leads the state's veterinary healthcare delivery system, ensuring professional standards, disease surveillance, and animal welfare across all species. With extensive clinical and administrative expertise, he oversees veterinary divisions, outbreak response protocols, and strategic partnerships to safeguard livestock productivity and public health.
+                </p>
+                <a href="contact.html" class="btn-primary inline-flex items-center gap-2">
+                    <i class="fas fa-envelope"></i> Contact Department
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 🔹 GRID 2: Core Mandate -->
+<section class="py-12 bg-[var(--bg-light)]">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+        <div class="bg-white p-8 rounded-xl shadow-md border-l-4 border-[var(--edo-green)]">
+            <h3 class="text-xl font-bold text-[var(--text-dark)] mb-3 flex items-center gap-2"><i class="fas fa-bullseye text-[var(--edo-green)]"></i> Department Core Mandate</h3>
+            <p class="text-[var(--text-light)] leading-relaxed text-justify">To deliver curative, reproductive, diagnostic, regulatory, and wildlife-related veterinary services; uphold professional standards; and ensure animal welfare, health, and productivity through science-based veterinary interventions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 🔹 GRID 3: Clinical Services Division & Units -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 fade-in">
+            <h2 class="section-title center text-3xl md:text-4xl font-bold text-[var(--text-dark)]">Veterinary Clinical Services Division</h2>
+            <p class="text-[var(--text-light)] max-w-3xl mx-auto mt-4 text-justify">Provides field and clinical veterinary healthcare, disease diagnosis, treatment, and emergency response. Supervises clinics, mobile health units, and ambulatory services while maintaining clinical records for public health surveillance.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Small Animal Unit -->
+            <div class="bg-white p-8 rounded-xl shadow-md fade-in">
+                <h3 class="text-xl font-bold text-[var(--text-dark)] mb-4 flex items-center gap-2"><i class="fas fa-paw text-[var(--edo-green)]"></i> Small Animal Unit</h3>
+                <ul class="text-[var(--text-light)] leading-relaxed space-y-3 list-disc list-inside marker:text-[var(--edo-green)] text-justify">
+                    <li>Provide specialized care to pets</li>
+                    <li>Provide medical treatment, managing infectious, metabolic and genetic diseases and stabilizing emergency cases</li>
+                    <li>Vaccination of pets against common diseases e.g. rabies</li>
+                    <li>Perform routine surgeries like spaying, neutering and other surgical procedures</li>
+                    <li>Provides deworming and parasite control</li>
+                </ul>
+            </div>
+
+            <!-- Aquatic Unit -->
+            <div class="bg-white p-8 rounded-xl shadow-md fade-in">
+                <h3 class="text-xl font-bold text-[var(--text-dark)] mb-4 flex items-center gap-2"><i class="fas fa-fish text-[var(--edo-green)]"></i> Aquatic Unit</h3>
+                <ul class="text-[var(--text-light)] leading-relaxed space-y-3 list-disc list-inside marker:text-[var(--edo-green)] text-justify">
+                    <li>Carries out vaccination programs for fishes</li>
+                    <li>Advises on quarantine and disinfection of new or infected stocks</li>
+                    <li>Performs clinical examination, prescribes and supervises medicated feed or bath treatment</li>
+                    <li>Conducts post-mortem to determine causes of mortality</li>
+                    <li>Investigates disease outbreaks and provides management solutions</li>
+                    <li>Conduct routine farm visits to assess fish health and management practices</li>
+                    <li>Collaborates with VPH for fish health certification for trade or export</li>
+                </ul>
+            </div>
+
+            <!-- Large Animal Unit -->
+            <div class="bg-white p-8 rounded-xl shadow-md fade-in">
+                <h3 class="text-xl font-bold text-[var(--text-dark)] mb-4 flex items-center gap-2"><i class="fas fa-cow text-[var(--edo-green)]"></i> Large Animal Unit</h3>
+                <ul class="text-[var(--text-light)] leading-relaxed space-y-3 list-disc list-inside marker:text-[var(--edo-green)] text-justify">
+                    <li>Provides vaccinations for livestock against major infectious diseases e.g. anthrax, FMD</li>
+                    <li>Provides deworming and parasite control in cattle, goats, sheep</li>
+                    <li>Treats sick livestock for infectious, metabolic and nutritional diseases</li>
+                    <li>Performs routine and emergency surgeries such as dehorning, castration</li>
+                    <li>Handles obstetrical cases including dystocia and retained placenta</li>
+                    <li>Provides post-surgical and post-partum care to ensure full recovery</li>
+                </ul>
+            </div>
+
+            <!-- Equine Unit -->
+            <div class="bg-white p-8 rounded-xl shadow-md fade-in">
+                <h3 class="text-xl font-bold text-[var(--text-dark)] mb-4 flex items-center gap-2"><i class="fas fa-horse text-[var(--edo-green)]"></i> Equine Unit</h3>
+                <ul class="text-[var(--text-light)] leading-relaxed space-y-3 list-disc list-inside marker:text-[var(--edo-green)] text-justify">
+                    <li>Provides treatment for a wide range of diseases in horses and donkeys</li>
+                    <li>Manages emergency conditions such as colic, lameness or injuries</li>
+                    <li>Carries out vaccination and deworming programs against common equine diseases/parasites</li>
+                    <li>Conducts surgical procedures in horses/donkeys</li>
+                    <li>Offers rehabilitation programs for injured horses</li>
+                </ul>
+            </div>
+
+            <!-- Avian Unit -->
+            <div class="bg-white p-8 rounded-xl shadow-md fade-in">
+                <h3 class="text-xl font-bold text-[var(--text-dark)] mb-4 flex items-center gap-2"><i class="fas fa-dove text-[var(--edo-green)]"></i> Avian Unit</h3>
+                <ul class="text-[var(--text-light)] leading-relaxed space-y-3 list-disc list-inside marker:text-[var(--edo-green)] ">
+                    <li>Provides vaccinations against major poultry diseases e.g. Newcastle, Gumboro, fowl pox, Mareks</li>
+                    <li>Provides deworming and parasite control in poultry and exotic birds</li>
+                    <li>Treats both infectious and nutritional diseases in poultry and other birds</li>
+                    <li>Provides on-farm consultation and treatment services for poultry farms</li>
+                    <li>Uses necropsy (post-mortem) to identify cause of disease and death</li>
+                    <li>Provides emergency care for injured or sick birds</li>
+                    <li>Offers beak trimming, claw trimming and wing clipping when necessary</li>
+                    <li>Monitors growth rate, feed conversion, and productivity in poultry flock</li>
+                </ul>
+            </div>
+
+            <!-- Wildlife & Micro-Livestock (Now in Right Grid next to Avian) -->
+            <div class="bg-white p-8 rounded-xl shadow-md fade-in">
+                <h3 class="text-xl font-bold text-[var(--text-dark)] mb-4 flex items-center gap-2"><i class="fas fa-leaf text-[var(--edo-green)]"></i> Wildlife & Micro-Livestock</h3>
+                <ul class="text-[var(--text-light)] leading-relaxed space-y-3 list-disc list-inside marker:text-[var(--edo-green)] text-justify">
+                    <li>Provide veterinary oversight for zoos, wildlife parks, sanctuaries, conservation centres and micro-livestock</li>
+                    <li>Implement surveillance for zoonotic diseases at human–wildlife interfaces</li>
+                    <li>Support biodiversity and wildlife welfare programs in collaboration with the Ministry of Environment</li>
+                    <li>Monitor and approve wildlife and exotic animal translocations or exhibitions</li>
+                    <li>Maintain a database of wildlife facilities, apiaries, and licensed handlers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 🔹 Porcine Unit (Standalone Below) -->
+<section class="py-16 bg-[var(--bg-light)]">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 fade-in">
+        <div class="bg-white p-8 rounded-xl shadow-md">
+            <h3 class="text-2xl font-bold text-[var(--text-dark)] mb-4 flex items-center gap-2"><i class="fas fa-piggy-bank text-[var(--edo-green)]"></i> Porcine Unit</h3>
+            <ul class="text-[var(--text-light)] leading-relaxed space-y-3 list-disc list-inside marker:text-[var(--edo-green)] text-justify">
+                <li>Provide diagnosis and treatment of infectious and non-infectious diseases of pigs</li>
+                <li>Provide deworming, parasite control and vaccination services against major pig diseases</li>
+                <li>Provide on-farm consultation and treatment services for pig farms</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+ <footer class="bg-[var(--edo-green-dark)] text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center text-white/80 text-sm">
+        <p>&copy; 2026 Ministry of Livestock Development, Edo State Government. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Back to Top -->
+<div class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></div>
+
+<!-- Scripts -->
+<script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if(mobileMenuBtn) mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        mobileMenu.classList.add('translate-x-0');
+    });
+    if(closeMenuBtn) closeMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-0');
+        mobileMenu.classList.add('translate-x-full');
+    });
+
+    // Mobile Department Dropdown Toggle
+    const mobileDeptToggle = document.getElementById('mobile-dept-toggle');
+    const mobileDeptMenu = document.getElementById('mobile-dept-menu');
+    const mobileDeptIcon = document.getElementById('mobile-dept-icon');
+    if (mobileDeptToggle) {
+        mobileDeptToggle.addEventListener('click', () => {
+            mobileDeptMenu.classList.toggle('hidden');
+            mobileDeptIcon.classList.toggle('rotate-180');
+        });
+    }
+
+    // Project Filter Logic
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update active button style
+            filterButtons.forEach(b => {
+                b.classList.remove('bg-[var(--edo-green)]', 'text-white');
+                b.classList.add('bg-gray-100', 'text-[var(--text-dark)]');
+            });
+            btn.classList.remove('bg-gray-100', 'text-[var(--text-dark)]');
+            btn.classList.add('bg-[var(--edo-green)]', 'text-white');
+
+            // Filter projects
+            const filter = btn.getAttribute('data-filter');
+            projectCards.forEach(card => {
+                const status = card.getAttribute('data-status');
+                if (filter === 'all' || status === filter) {
+                    card.style.display = 'block';
+                    setTimeout(() => card.style.opacity = '1', 50);
+                } else {
+                    card.style.opacity = '0';
+                    setTimeout(() => card.style.display = 'none', 200);
+                }
+            });
+        });
+    });
+
+    // Back to Top Button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+    if(backToTop) backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Fade-in on Scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+</script>
+
+</body>
+</html>
